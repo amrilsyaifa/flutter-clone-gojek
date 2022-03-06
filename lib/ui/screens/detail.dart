@@ -25,11 +25,13 @@ class DetailScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     ElevatedButton(
+                      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(MyColors.green)),
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
                         child: const Text("Back")),
                     ElevatedButton(
+                      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(MyColors.green)),
                         onPressed: () {
                           Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => const Detail2Screen(),
